@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "spu01FN/KtZ1SJ352WOvvKY+JP4EDUDsga48PLkOKEqn6vIt3h3YmhIKrnlFGNHKufZ3u4P169ai22wThJ5WDw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\baozorp\\source\\repos\\Kript kurs work\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\baozorp\\.nuget\\packages\\google.protobuf\\3.21.5\\google.protobuf.3.21.5.nupkg.sha512",
+    "C:\\Users\\baozorp\\.nuget\\packages\\grpc.core.api\\2.48.0\\grpc.core.api.2.48.0.nupkg.sha512",
+    "C:\\Users\\baozorp\\.nuget\\packages\\grpc.net.client\\2.48.0\\grpc.net.client.2.48.0.nupkg.sha512",
+    "C:\\Users\\baozorp\\.nuget\\packages\\grpc.net.common\\2.48.0\\grpc.net.common.2.48.0.nupkg.sha512",
+    "C:\\Users\\baozorp\\.nuget\\packages\\grpc.tools\\2.48.1\\grpc.tools.2.48.1.nupkg.sha512",
+    "C:\\Users\\baozorp\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\baozorp\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

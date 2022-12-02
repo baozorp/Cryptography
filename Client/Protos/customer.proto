@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+option csharp_namespace = "Client";
+
+package greet;
+
+
+service Customer {
+  rpc SendSymKey (SymKeyRequest) returns (SymKeyReply);
+  rpc GetListOfObjects (ListOfObjectsRequest) returns (ListOfObjectsReply);
+  rpc SendFile (SendFileRequest) returns (SendFileReply);
+  rpc GetFile (GetFileRequest) returns (stream GetFileReply);
+  rpc isExist (ExistsRequest) returns (ExistsReply);
+}
+
+message SymKeyRequest {
+	bytes p = 1;
+	bytes g = 2;
+	bytes y = 3;
+	bytes k = 4;
+}
+
+message SymKeyReply {
+	bytes encryptedSymmetrikKeyMessageA = 1;
+	bytes encryptedSymmetrikKeyMessageB = 2;
+	bytes encryptedinitialVectorMessageA = 3;
+	bytes encryptedinitialVectorMessageB = 4;
+}
+
+message ListOfObjectsRequest{
+}
+
+message ListOfObjectsReply{
+	repeated string listOfObjects = 1;
+}
+
+message SendFileRequest{
+	string fileName = 1;
+	bytes file = 2;
+}
+message SendFileReply{
+	bool result = 1;
+}
+
+message GetFileRequest{
+	string fileName = 1;
+}
+message GetFileReply{
+	string fileName = 1;
+	bytes file = 2;
+}
+
+message ExistsRequest{
+	string fileName = 1;
+}
+
+message ExistsReply{
+	bool exist = 1;
+}
